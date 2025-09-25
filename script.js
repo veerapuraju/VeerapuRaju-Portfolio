@@ -1,4 +1,4 @@
-// Typing Effect
+
 const texts = [
   "B.Tech CSE (AI/ML) @ GITAM",
   "AI/ML Engineer 🚀",
