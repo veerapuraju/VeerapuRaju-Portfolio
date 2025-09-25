@@ -64,31 +64,43 @@ h2 { color: #4b0082; }
 .card:hover { transform: scale(1.05); }
 .card h3 { color: #0a3d62; margin-bottom: 10px; }
 
-/* Skills */
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.skill-category {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.skill-category h3 { color: #4b0082; margin-bottom: 15px; font-size: 1.2rem; }
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
   justify-content: center;
+  gap: 10px;
 }
 .badge {
   background: linear-gradient(45deg, #38bdf8, #4b0082);
   color: white;
-  padding: 8px 15px;
+  padding: 8px 14px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
+  transition: transform 0.2s;
 }
-
-/* Projects */
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #0a3d62;
-  font-weight: bold;
-  text-decoration: none;
-}
-.project a:hover { text-decoration: underline; }
+.badge:hover { transform: scale(1.1); }
 
 /* Contact */
 .contact-form {
